@@ -1,0 +1,55 @@
+---
+layout: default
+category: about-zh
+language: cn
+title: 朱虎的个人主页
+description: 这是朱虎的个人主页，目前为南科大研究生。2020年7月从西安交通大学自动化专业毕业,进入南方科技大学机械系，先后参加过近十次创业及科技类比赛,曾获得国家级三等奖一项,省级银奖一项,省级三等奖一项,并多次为项目负责人开展工作.希望通过此博客，结识更多同道中人。
+---
+
+<section class="about-me inner">
+  <h1>
+    <div class="book-me">
+      <!--<a class="btn btn-lg" href="/contact">联系我</a>-->
+      <a class="btn btn-lg" href="/">英文</a>
+    </div>
+    <span class="hello">但行好事,莫问前程</span>
+  </h1>
+
+  <blockquote>
+  <p>
+    在人生的前半段,大家都在同一个轨道竞速,而这种竞速是一个动态的过程!
+  </p>
+  </blockquote>
+  <p>
+    如果您有兴趣，可以发邮件给我。
+  </p>
+  <p>
+    这是<a href="/"><span itemprop="name">朱虎</span></a>的个人主页，目前为南科大研究生,研究方向为机器人,计算机视觉与SLAM方向。2020年7月从西安交通大学自动化专业毕业,进入南方科技大学机械系，先后参加过近十次创业及科技类比赛,曾获得国家级三等奖一项,省级银奖一项,省级三等奖一项,并多次为项目负责人开展工作.希望通过此博客，结识更多同道中人。
+  </p>
+  <p>
+    研究兴趣集中于<strong>机器人、SLAM</strong>。
+  </p>
+  <p>
+    极度不自律，中度代码洁癖(<a href="https://github.com/willard-yuan">@willard-yuan<i class="icon-github"></i></a>)，看到美的东西就会拼命研究。闲暇之余，喜读经济,历史等方面的书，偶尔写些<a href="http://zhuhu00.github.io/blog/">文字</a>。冲冲冲。
+  </p>
+</section>
+
+<section class="inner">
+<div class="post-recents-in-index">
+<strong>最近写作</strong>
+</div>
+<blockquote>
+<ul>
+    {% for post in site.posts limit:3 %}
+    <li class="post-list-in-index">
+    <small class="post-list-date-in-index">{{ post.date | date_to_string }}</small><a  href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+</blockquote>
+  <p>
+    更多请查看我的<a href="{{ site.url }}/ZhuHu_resume.pdf"><strong>简历</strong></a>。
+  </p>
+</section>
+
+<!--<a href="https://github.com/zhuhu00/zhuhu00.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>-->

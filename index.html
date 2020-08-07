@@ -1,3 +1,57 @@
 ---
-layout: index
+layout: default
+category: about
+title: Zhu Hu's homepage
+description: I am Zhu Hu
 ---
+
+<section class="about-me inner">
+  <h1>
+    <div class="book-me">
+      <a class="btn btn-lg" href="/cn/">Chinese</a>
+    </div>
+    <span class="hello">
+      <em>Keep</em>
+      <small>fighting.
+    </span>
+  </h1>
+
+  <blockquote>
+  <p>
+    we are one!
+  </p>
+  </blockquote>
+
+  <p>
+    I am <a href="/"><span itemprop="name">Zhu Hu</span></a>. I earned Bachelor's degree at <a href="http://www.xjtu.edu.cn/">Xi'an JiaoTong University</a> of Automation on July 1，2020.
+  </p>
+
+  <p>
+    My research interests cover <strong>Robot, CV and SLAM</strong> .
+  </p>
+
+  <p>
+    I support open source (@<a href="https://github.com/zhuhu00">Zhu Hu<i class="icon-github"></i></a>), love coding. In my free time, I dive into writing, losing in thinking, reading <a href="https://github.com/zhuhu00">books</a> to enrich themselves.
+  </p>
+
+</section>
+
+<section class="inner">
+  <div class="post-recents-in-index">
+    <strong>Recent blog posts</strong>
+  </div>
+  <blockquote>
+    <ul>
+      {% for post in site.posts limit:3 %}
+      <li class="post-list-in-index">
+      <small class="post-list-date-in-index">{{ post.date | date_to_string }}</small><a  href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </blockquote>
+  <p>
+    If you are interested in me, you can access to my English <a href="{{ site.url }}/ZhuHu_resume.pdf"><strong>resume</strong></a> for more details.
+  </p>
+</section>
+
+<!--<a href="https://github.com/zhuhu00/zhuhu00.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>-->
