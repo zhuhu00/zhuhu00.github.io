@@ -1,98 +1,53 @@
 <!DOCTYPE html>
-<html lang="{% if page.language == nil %}en{% else %}{{ page.language }}{% endif %}">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="aexITLS38FdIRzwj25OVWxm87rpa9l-UV0URTyC9cTs" />
   <title>
-    {{ page.title }}
-    {% if page.category == 'blog' and page.url != '/blog/index.html' %}
-    - Zhu Hu
-    {% endif %}
+    Zhu Hu's homepage
+    
   </title>
   <link rel="stylesheet" href="../css/site.css">
   <link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
   <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-  {% if page.description %}<meta name="description" content="{{page.description}}" />{% endif %}
+  <meta name="description" content="I am Zhu Hu" />
   <link href="/blog/feed.xml" type="application/rss+xml" rel="alternate" title="Latest 10 blog posts (atom)" />
 
-  {% if page.url == '/index.html' %}
-    <link rel="alternate" hreflang="en" href="/" />
-  {% elsif page.url == '/cn/index.html' %}
-    <link rel="alternate" hreflang="cn" href="/cn/" />
-  {% endif %}
+  
 
-  {{ page.extra_head }}
+  
 
-  {% if page.category == 'blog' %}
-    {% if page.photo %}
-      <meta property="og:image" content="/images/posts/{{ page.photo }}" />
-    {% endif %}
-  {% endif %}
+  
 </head>
 
 <body>
   <div class="header-container">
     <header class="inner">
-      {% if page.url == '/cn/' %}
+      
       <nav>
-        <a class="{% if page.category == 'about-zh' %} selected {% endif %}" href="/cn/">关于</a>
-        <a class="{% if page.category == 'project-zh' %} selected {% endif %}" href="/cn/project">项目</a>
-        <!--<a class="{% if page.category == 'resume' %} selected {% endif %}" href="/resume/">Resume</a>-->
-        <!--<a href="/resume/">简历</a>-->
-        <a href="/ZhuHu_resume.pdf">简历</a>
-        <!--<a class="{% if page.category == 'publication' %} selected {% endif %}" href="/publication/">出版</a>-->
-        <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">博客</a>
-        <!--<a href="https://github.com/zhuhu00">视觉检索</a>-->
-        <a href="/books/">书单</a>
-		<a href="/timeline/">时间线</a>
-        <a href="https://github.com/zhuhu00">Github</a>
-      </nav>
-      {% elsif page.url == '/cn/project' %}
-      <nav>
-        <a class="{% if page.category == 'about-zh' %} selected {% endif %}" href="/cn/">关于</a>
-        <a class="{% if page.category == 'project-zh' %} selected {% endif %}" href="/cn/project">项目</a>
-        <!--<a class="{% if page.category == 'resume' %} selected {% endif %}" href="/resume/">Resume</a>-->
-        <!--<a href="/yuanyong_resume_cn.pdf">简历</a>-->
-	      <a href="/ZhuHu_resume.pdf">简历</a>
-        <!--<a class="{% if page.category == 'publication' %} selected {% endif %}" href="/publication/">出版</a>-->
-        <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">博客</a>
-
-        <!--<a href="https://github.com/willard-yuan/awesome-cbir-papers">视觉检索</a>-->
-
-	    <a href="/books/">书单</a>
-
-		<a href="/timeline/">时间线</a>
-
-        <a href="https://github.com/zhuhu00">GitHub</a>
-
-      </nav>
-      {% else %}
-      <nav>
-        <a class="{% if page.category == 'about' %} selected {% endif %}" href="/">About</a>
-        <a class="{% if page.category == 'project' %} selected {% endif %}" href="/project/">Project</a>
-        <!--<a class="{% if page.category == 'resume' %} selected {% endif %}" href="/resume/">Resume</a>-->
+        <a class=" selected " href="/">About</a>
+        <a class="" href="/project/">Project</a>
+        <!--<a class="" href="/resume/">Resume</a>-->
 	      <!--<a href="/yuanyong_resume_cn.pdf">Resume</a>-->
 	      <a href="/ZhuHu_resume.pdf">Resume</a>
-        <!--<a class="{% if page.category == 'publication' %} selected {% endif %}" href="/publication/">Publication</a>-->
-        <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">Blog</a>
+        <!--<a class="" href="/publication/">Publication</a>-->
+        <a class="" href="/blog/">Blog</a>
         <!--<a href="https://github.com/willard-yuan/awesome-cbir-papers">CBIR</a>-->
 	    <a href="/books/">Book</a>
 		<a href="/timeline/">Times</a>
         <a href="https://github.com/zhuhu00">GitHub</a>
       </nav>
-	  {% endif %}
+	  
 
       <div class="pull-right right logo">
         <!--<div class="name">
           <a href="/">Yong Yuan</a><br />
           <small>
             <em>
-              {% if page.url == '/cn/index.html' %}
-                <a href="/cn">开发者</a>
-              {% else %}
+              
                 <a href="/">developer</a>
-              {% endif %}
+              
             </em>
           </small>
         </div>-->
@@ -103,7 +58,57 @@
     <div class="clear"></div>
   </div>
 
-  {{ content }}
+  <section class="about-me inner">
+  <h1>
+    <div class="book-me">
+      <a class="btn btn-lg" href="/cn/">Chinese</a>
+    </div>
+    <span class="hello">
+      <em>Keep</em>
+      <small>fighting.
+    </span>
+  </h1>
+
+  <blockquote>
+  <p>
+    we are one!
+  </p>
+  </blockquote>
+
+  <p>
+    I am <a href="/"><span itemprop="name">Zhu Hu</span></a>. I earned Bachelor's degree at <a href="http://www.xjtu.edu.cn/">Xi'an JiaoTong University</a> of Automation on July 1，2020.
+  </p>
+
+  <p>
+    My research interests cover <strong>Robot, CV and SLAM</strong> .
+  </p>
+
+  <p>
+    I support open source (@<a href="https://github.com/zhuhu00">Zhu Hu<i class="icon-github"></i></a>), love coding. In my free time, I dive into writing, losing in thinking, reading <a href="https://github.com/zhuhu00">books</a> to enrich themselves.
+  </p>
+
+</section>
+
+<section class="inner">
+  <div class="post-recents-in-index">
+    <strong>Recent blog posts</strong>
+  </div>
+  <blockquote>
+    <ul>
+      
+      <li class="post-list-in-index">
+      <small class="post-list-date-in-index">23 Jun 2020</small><a  href="http://localhost:4000/blog/testing.html" title="我是你爸">我是你爸</a>
+      </li>
+      
+    </ul>
+  </blockquote>
+  <p>
+    If you are interested in me, you can access to my English <a href="http://localhost:4000/ZhuHu_resume.pdf"><strong>resume</strong></a> for more details.
+  </p>
+</section>
+
+<!--<a href="https://github.com/zhuhu00/zhuhu00.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>-->
+
   <!--<div class="separator"></div>-->
 
   <footer>
