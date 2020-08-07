@@ -8,7 +8,8 @@ url: http://zhuhu00.github.io
 permalink: /blog/:title.html
 timezone: Asia/Chongqing
 
-# Overriden by GitHub Pages: https://help.github.com/articles/using-jekyll-with-pages#configuring-jekyll
+# Overriden by GitHub Pages: https://help.github.com/articles/using-jekyll-with-pages
+#configuring-jekyll
 safe: true
 lsi: false
 
