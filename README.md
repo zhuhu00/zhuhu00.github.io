@@ -9,9 +9,8 @@
 ### 已完成功能
 
 1. 调用豆瓣api显示书单列表
-2. ~~在线简历~~（未在我的个人博客上展示，因为我有pdf的版本，为避免两处都要维护，所以弃用，如果需要，可以在导航栏上添加[resume](https://github.com/willard-yuan/willard-yuan.github.io/tree/master/resume)）
-3. 添加latex公式支持([效果见博文](http://yongyuan.name/blog/decision-tree.html))
-4. 添加个人时间线([timeline](http://yongyuan.name/timeline/))
+2. ~~在线简历~~（未在我的个人博客上展示，因为我有pdf的版本，为避免两处都要维护，所以弃用，如果需要，可以在导航栏上添加[resume](https://github.com/zhuhu00/zhuhu00.github.io/tree/master/resume)）
+3. 添加个人时间线([timeline](http://zhuhu00.github.io/timeline/))
 
 ### 安装步骤
 
@@ -20,7 +19,7 @@
 3. 修改英文页面[default.html](https://github.com/zhuhu00/zhuhu00.github.io/blob/master/_layouts/default.html)，把里面出现的固定的url更改成你的url； 
 4. 修改中文页面[index.html](https://github.com/zhuhu00/zhuhu00.github.io/blob/master/cn/index.html)，主要是中文页面的一些内容； 
 5. **resume**目录是在线简历，[演示效果](http://zhuhu00.github.io/resume/)，这个你在用时，把前面那个[default.html](https://github.com/zhuhu00/zhuhu00.github.io/blob/master/_layouts/default.html)中把latex的简历url换成这个目录的url；  
-6. **book**模板，这个你需要有一个豆瓣账号，现在[books/index.html](https://github.com/willard-yuan/willard-yuan.github.io/blob/master/books/index.html)页面把title等修改一下，然后到[douban.api.js](https://github.com/willard-yuan/willard-yuan.github.io/blob/master/js/douban.api.js)把账号user和api改一下。
+6. **book**模板，这个你需要有一个豆瓣账号，现在[books/index.html](https://github.com/zhuhu00/zhuhu00.github.io/blob/master/books/index.html)页面把title等修改一下，然后到[douban.api.js](https://github.com/zhuhu00/zhuhu00.github.io/blob/master/js/douban.api.js)把账号user和api改一下。
 
 ```js
 function DoubanApi() {
